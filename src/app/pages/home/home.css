@@ -1,0 +1,14 @@
+.btn-danger {
+    background-color: blueviolet;
+    color: azure;
+}
+
+#title{
+    color: crimson;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card{
+    margin: 5rem; /*1 rem son 16 pixeles*/
+}

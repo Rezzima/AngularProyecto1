@@ -1,4 +1,10 @@
 .navegador{
     background-color: blueviolet !important;
-    
+    color: aliceblue !important;
+}
+.nav-link, .nav-link.active{
+    color: aliceblue;
+}
+.navbar-brand{
+    color: aliceblue;
 }

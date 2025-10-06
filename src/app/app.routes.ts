@@ -6,7 +6,7 @@ import { Products } from './pages/products/products';
 
 export const routes: Routes = [
     /* defininmos una raiz principal */ 
-    {path: "**", component: Home},
+    {path: "", component: Home},
     {path: 'home', component: Home},
     {path: 'about', component: About},
     {path: 'contact', component: Contact},

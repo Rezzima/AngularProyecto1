@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    justify-content: center;
+
+    padding: 1rem;
+}
+
+img {
+    height: 15rem;
+    object-fit: cover;
+}
+
+/*Pantalla comp*/
+@media (min-width: 751px) {
+    .card {
+        width: 18rem;
+    }
+}
+
+/*Pantalla cel*/
+@media (max-width: 750px) {
+    .card {
+        width: 9rem;
+    }
+}

@@ -10,10 +10,10 @@ import { Tarjeta } from '../../models/tarjeta';
 })
 
 export class Products {
-  public infoTarjeta: Tarjeta[];
+  public tarjetaInfo: Tarjeta[];
 
   constructor (){
-    this.infoTarjeta = [
+    this.tarjetaInfo = [
       {
         id: "1G",
         img: "../../../assets/jerbo.jpg",
@@ -36,7 +36,7 @@ export class Products {
         id: "3N",
         img: "../../../assets/mara_argentina.jpg",
         alt: "Mara patagonica",
-        titulo: "Nombre: Mara",
+        titulo: "Nombre: Dolichotis patagonum",
         descripcion: "Animal patagonico llamado 'Mara'",
         anualPublicacion: 2011
       },

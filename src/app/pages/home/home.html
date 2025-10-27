@@ -1,4 +1,4 @@
-<h1 id="title"><img src="../../../assets/tienda de animales.gif" alt="ANGULAR"></h1>
+<h1 id="title"><img src="../../../assets/galeriaAnimales.gif" alt="ANGULAR"></h1>
 
 <!-- Carrusel -->
 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -75,28 +75,45 @@
 </div>
 
 <!-- Modal -->
- <div class="modal fade" id="verMasInfo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">
-                  {{tarjetaSelect?.nombre}}
-                </h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="modal-imagen">
-                    <img class="imagenTarjetas" src="{{tarjetaSelect?.img}}" alt="{{tarjetaSelect?.alt}}">
-                </div>
-
-                <div class="modal-description">
-                    {{tarjetaSelect?.informacion}}
-                </div>
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
+<div class="modal fade" id="verMasInfo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">
+          {{tarjetaSelect?.nombre}}
+        </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-imagen">
+          <img class="imagenTarjetas" src="{{tarjetaSelect?.img}}" alt="{{tarjetaSelect?.alt}}">
         </div>
+
+        <div class="modal-description">
+          {{tarjetaSelect?.informacion}}
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
     </div>
+  </div>
 </div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md-6 ">
+      </div>
+      <div class="col-md-6 text-md-right">
+        <ul class="nav-links list-unstyled">
+          <li><a href="/home">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/products">Products</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

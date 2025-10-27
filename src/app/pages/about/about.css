@@ -1,0 +1,20 @@
+.titulo {
+    display: flex;
+    justify-content: center;
+}
+.cinzel-fuente {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: crimson;
+  display: block;
+}
+#jefazo {
+    height: 300px;
+    width: 300px;
+}
+.containerGeneral {
+    text-align: center;
+}

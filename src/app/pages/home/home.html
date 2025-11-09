@@ -58,14 +58,35 @@
 <!-- ngFor -->
 <div class="container text-center">
   <div class="row g-2">
+    <!-- "g-2" aplica un espacio (gap) moderado entre columnas y filas. -->
+
     <div *ngFor="let i of infoAnima" class="col-4">
+      <!-- "*ngFor" es una directiva de Angular que repite este bloque por cada elemento del arreglo "infoAnima".
+           "let i of infoAnima" → por cada elemento de la lista, crea una variable local "i" con los datos de ese elemento.
+           "col-4" indica que cada tarjeta ocupa 4 de las 12 columnas de la fila (3 tarjetas por fila). -->
+
       <div class="p-3 card">
+        <!-- "p-3" aplica un padding interno de tamaño 3 (Bootstrap).
+             "card" aplica los estilos visuales de tarjeta: borde, fondo blanco y sombra. -->
+
         <img src="{{ i.img }}" class="card-image-top" alt="{{ i.alt }}">
+        <!-- "src" usa interpolación de datos Angular para mostrar la ruta de la imagen desde el objeto actual "i".
+             "alt" muestra un texto alternativo en caso de error de carga. -->
+
         <div class="card-body">
           <h5 class="card-title">{{ i.nombre }}</h5>
+          <!-- Muestra el nombre del elemento actual ("i.nombre") como título. -->
+
           <p class="card-text">{{ i.informacion }} - {{ i.edadProm }}</p>
+          <!-- Muestra la información y la edad promedio del elemento. -->
+
+          <!-- Data-bs-target apunta al id del modal que se abrirá. -->
           <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#verMasInfo"
             (click)="verMasInfo(i)">
+            <!-- "data-bs-toggle='modal'" le indica a Bootstrap que este botón abrirá un modal.
+                 "data-bs-target='#verMasInfo'" define qué modal abrir (el que tenga ese id).
+                 "(click)='verMasInfo(i)'" ejecuta la función "verMasInfo(i)" del componente Angular al hacer clic,
+                 pasando el objeto actual "i" para que el modal muestre su información. -->
             Ver más
           </button>
         </div>
@@ -74,19 +95,38 @@
   </div>
 </div>
 
+
 <!-- Modal -->
 <div class="modal fade" id="verMasInfo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- 
+    "modal" → clase base de Bootstrap que define el componente modal.
+    "fade" → agrega una animación de aparición/desaparición suave.
+    id="verMasInfo" → identificador que permite abrir el modal desde un botón con data-bs-target="#verMasInfo".
+    tabindex="-1" → evita que el modal sea enfocado por tabulación cuando está oculto.
+  -->
+
   <div class="modal-dialog">
+    <!-- Contenedor interno del cuadro de diálogo. -->
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="exampleModalLabel">
           {{tarjetaSelect?.nombre}}
+          <!-- Muestra el nombre de la tarjeta seleccionada.
+               El operador "?."
+               evita errores si "tarjetaSelect" es null o undefined. -->
         </h1>
+
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <!-- Data-bs-dismiss="modal" le indica a Bootstrap que cierre automáticamente el modal. -->
       </div>
+
       <div class="modal-body">
         <div class="modal-imagen">
           <img class="imagenTarjetas" src="{{tarjetaSelect?.img}}" alt="{{tarjetaSelect?.alt}}">
+          <!-- Muestra dinámicamente la imagen de la tarjeta seleccionada.
+               src y alt usan interpolación Angular.
+               "?."
+               protege contra valores nulos. -->
         </div>
 
         <div class="modal-description">
@@ -94,17 +134,21 @@
         </div>
 
       </div>
+
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <!-- Data-bs-dismiss="modal" → cierra el modal automáticamente al hacer clic. -->
       </div>
+
     </div>
   </div>
 </div>
 
+
 <footer class="footer">
   <div class="container">
-    <div class="row mb-5">
-      <div class="col-md-6 ">
+    <div class="row">
+      <div class="col-md-1 ">
       </div>
       <div class="col-md-6 text-md-right">
         <ul class="nav-links list-unstyled">

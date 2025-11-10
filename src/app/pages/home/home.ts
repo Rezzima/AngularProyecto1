@@ -14,7 +14,7 @@ export class Home {
   constructor() {
     this.infoAnima = [
       {
-        id: "1G",
+        id: 1,
         img: "../../../assets/jacob.jpg",
         nombre: "Jacobo",
         alt: "Perro Jacobo",
@@ -22,7 +22,7 @@ export class Home {
         edadProm: 9999
       },
       {
-        id: "2G",
+        id: 2,
         img: "../../../assets/jerbo.jpg",
         nombre: "Dipodidae",
         alt: "Roedor Jerbo",
@@ -31,7 +31,7 @@ export class Home {
         edadProm: 4
       },
       {
-        id: "3G",
+        id: 3,
         img: "../../../assets/evil_jacob.png",
         nombre: "Evil Jacobo",
         alt: "Gato Jacobo",

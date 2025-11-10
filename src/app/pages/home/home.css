@@ -19,9 +19,9 @@
     background: linear-gradient(135deg, #1e90ff, #00bfff);
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-    transition: transform 0.1s ease, box-shadow 0.3s ease;
+    /* transition: transform 0.1s ease, box-shadow 0.3s ease;
     transform-style: preserve-3d;
-    perspective: 1000px;
+    perspective: 1000px; */
 }
 
 .carousel-item {
@@ -48,7 +48,7 @@
 /*Pantalla cel*/
 @media (max-width: 750px) {
     .card {
-        width: 9rem;
+        width: 18rem;
     }
 }
 

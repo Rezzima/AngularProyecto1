@@ -11,6 +11,7 @@ import { Reptiles } from './productos/secciones/reptiles/reptiles';
 import { Roedores } from './productos/secciones/roedores/roedores';
 import { Equidos } from './productos/secciones/equidos/equidos';
 import { Galeria } from './productos/secciones/galeria/galeria';
+import { Leporidae } from './productos/secciones/leporidae/leporidae';
 
 export const routes: Routes = [
     /* defininmos una raiz principal */ 
@@ -26,5 +27,6 @@ export const routes: Routes = [
     {path: 'reptiles', component: Reptiles},
     {path: 'roedores', component: Roedores},
     {path: 'equidos', component: Equidos},
+    {path: 'leporidae', component: Leporidae},
     {path: 'galeria', component: Galeria}
 ];

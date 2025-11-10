@@ -15,26 +15,26 @@ export class Roedores {
     this.informacion = [
       {
         id: 1,
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Spectacled_Caiman.JPG/250px-Spectacled_Caiman.JPG",
-        nombre: "Caiman crocodilus",
-        alt: "Caiman de anteojos",
-        informacion: `El caimán de anteojos (Caiman crocodilus), también conocido como cachirre, blanco, guagipal, babilla o baba, es una especie de reptil carnívoro`,
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Abrocoma_bennettii.png/250px-Abrocoma_bennettii.png",
+        nombre: "Abrocomidae",
+        alt: "Chinchilla",
+        informacion: `Las ratas chinchillas son miembros de la familia Abrocomidae. Son similares a las chinchillas con su textura y su color, pero su estructura corporal es más parecida a una rata`,
         edadProm: 10
       },
       {
         id: 2,
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Paleosuchus-trigonatus.jpg/250px-Paleosuchus-trigonatus.jpg",
-        nombre: "Paleosuchus trigonatus",
-        alt: "Caiman Postruso",
-        informacion: "El caimán postruso, cachirre o dirin-dirin (Amazonía peruana) (Paleosuchus trigonatus), es una de las dos especies del género Paleosuchus",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Majas.jpg/250px-Majas.jpg",
+        nombre: "Cuniculus",
+        alt: "Pacas",
+        informacion: "Cuniculus es un género de roedores histricomorfos, el único de la familia Cuniculidae, propios de Sudamérica, que contiene a las dos especies conocidas vulgarmente como pacas.",
         edadProm: 14
       },
       {
         id: 3,
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Crocodylus_cataphractus_faux-gavial_d%27Afrique2.JPG/250px-Crocodylus_cataphractus_faux-gavial_d%27Afrique2.JPG",
-        nombre: "Mecistops cataphractus",
-        alt: "Cocodrilo hociquifino africano",
-        informacion: "El cocodrilo hociquifino africano (Mecistops cataphractus) es una especie de saurópsido crocodilio catalogada como tal por Cuvier en 1825",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Dasyprocta_azarae.JPG/250px-Dasyprocta_azarae.JPG",
+        nombre: "Dasyprocta azarae",
+        alt: "Aguti de Azara",
+        informacion: "El agutí de Azara (Dasyprocta azarae), (llamado así en honor al naturalista español Félix de Azara) es una especie de roedor histricomorfo de la familia Dasyproctidae autóctona de Paraguay",
         edadProm: 10
       }
     ]

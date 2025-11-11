@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Caninos } from '../caninos/caninos';
 import { Felinos } from '../felinos/felinos';
@@ -17,6 +17,7 @@ import { TarjetaAnimal } from '../tarjeta-animal/tarjeta-animal';
   styleUrl: './galeria.css'
 })
 export class Galeria {
+
   categorias = [
     { nombre: 'Caninos', animales: new Caninos().informacion },
     { nombre: 'Felinos', animales: new Felinos().informacion },
@@ -26,4 +27,9 @@ export class Galeria {
     { nombre: 'Leporidae', animales: new Leporidae().informacion },
     { nombre: 'Roedores', animales: new Roedores().informacion }
   ]
+  tarjetaSeleccionada: any = null;
+  
+  verMasInfo(animal: any) {
+    this.tarjetaSeleccionada = animal;
+  }
 }

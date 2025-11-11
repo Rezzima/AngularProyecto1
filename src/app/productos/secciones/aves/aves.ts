@@ -15,10 +15,10 @@ export class Aves {
     this.informacion = [
       {
         id: 1,
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Charadriiformes_Diversity.jpg/330px-Charadriiformes_Diversity.jpg",
-        nombre: "Charadriiformes",
-        alt: "Ave neognata",
-        informacion: `Las caradriformes (Charadriiformes) son un gran clado de aves neognatas dividido en varios grupos (seis subórdenes) que presentan 351 especies`,
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Tringa_brevipes.jpg/250px-Tringa_brevipes.jpg",
+        nombre: "Scolopacidae",
+        alt: "Correlimo",
+        informacion: `Los escolopácidos (Scolopacidae) son una familia de aves caradriformes. Es una familia grande y diversa de pequeñas y medianas aves costeras`,
         edadProm: 15
       },
       {

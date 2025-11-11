@@ -11,3 +11,25 @@
 .card-text {
     font-size: small;
 }
+.tituloSecciones {
+  color: aliceblue;
+  margin: 2rem;
+  text-align: center;
+}
+.bloqueUno {
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+  border-radius: 5rem;
+  margin: 2rem;
+}
+.imagenSecciones {
+  margin: 2rem;
+}
+.imagenUno {
+  height: 15rem;
+  border-radius: 4rem;
+}
+.parrafo {
+   margin: 2rem;
+}

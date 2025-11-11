@@ -1,6 +1,7 @@
 .titulo {
     display: flex;
     justify-content: center;
+    color: crimson;
 }
 .cinzel-fuente {
   font-family: "Cinzel", serif;
@@ -14,6 +15,7 @@
 #jefazo {
     height: 300px;
     width: 300px;
+    margin-left: 1rem;
 }
 .containerGeneral {
     text-align: center;

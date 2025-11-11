@@ -1,3 +1,9 @@
-.navegadorAnima {
-    background-color: green;
+.navbar {
+    background-color: grey !important;
+}
+.dropdown-menu {
+    background-color: grey !important;
+}
+.navText, .nav-link.active {
+    color: aliceblue;
 }

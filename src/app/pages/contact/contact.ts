@@ -30,6 +30,7 @@ export class Contact {
       this.coleccionAnimales.push(nuevoMensaje)
       console.log(`mensaje enviado: `, nuevoMensaje);
       this.nuevoMensaje.reset()
+      alert("Se ha enviado el mensaje")
     }
   }
 }

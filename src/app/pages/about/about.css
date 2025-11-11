@@ -1,16 +1,24 @@
 .titulo {
-    display: flex;
-    justify-content: center;
-    color: crimson;
+   color: aliceblue;
+    text-align: center;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 3rem;
+    display: block;
+    margin: 1rem;
 }
 .cinzel-fuente {
-  font-family: "Cinzel", serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 1.5rem;
-  color: crimson;
-  display: block;
+   color: aliceblue;
+    text-align: center;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.3rem;
+    display: block;
+    margin: 1rem;
 }
 #jefazo {
     height: 300px;

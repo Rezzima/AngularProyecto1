@@ -1,9 +1,30 @@
 .navbar {
     background-color: grey !important;
 }
+
 .dropdown-menu {
     background-color: grey !important;
 }
-.navText, .nav-link.active {
+
+.navText,
+.nav-link.active {
     color: aliceblue;
+    text-align: center;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1rem;
+    display: block;
+}
+
+.navTextOne {
+    color: black;
+    text-align: center;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1rem;
+    display: block;
 }

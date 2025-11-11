@@ -28,9 +28,9 @@ export class Contact {
         nombre: this.nuevoMensaje.value.nombre!
       }
       this.coleccionAnimales.push(nuevoMensaje)
+      alert("Se ha enviado el mensaje")
       console.log(`mensaje enviado: `, nuevoMensaje);
       this.nuevoMensaje.reset()
-      alert("Se ha enviado el mensaje")
     }
   }
 }

@@ -4,14 +4,21 @@
 }
 
 #title {
-    color: crimson;
-    font-weight: bold;
+    color: aliceblue;
     text-align: center;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 3rem;
+    display: block;
+    margin: 2rem;
 }
 
 .contenedorTarjetas {
     display: flex;
     justify-content: center;
+    margin: 1rem;
 }
 
 .card {
@@ -69,3 +76,6 @@
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
 }
 
+a {
+    outline: none;
+}

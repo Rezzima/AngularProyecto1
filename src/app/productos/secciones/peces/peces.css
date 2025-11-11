@@ -7,3 +7,13 @@
     height: 100px;
     width: 200px;
 }
+
+.card-image-top {
+  width: 100%;
+  height: 300px;         /* podés ajustar el alto a gusto */
+  object-fit: cover;     /* recorta sin deformar la imagen */
+  border-radius: 8px;    /* opcional: bordes suaves */
+}
+.card-text {
+    font-size: small;
+}

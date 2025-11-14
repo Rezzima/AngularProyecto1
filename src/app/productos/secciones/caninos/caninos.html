@@ -1,23 +1,53 @@
-<h1 class="titulo">Caninos</h1>
+<div class="barra">
+
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+  </head>
+</div>
+
+<h1 class="titulo cinzel-fuente">Caninos</h1>
 
 <!-- ngFor -->
-<div class="container text-center">
-  <div class="row">
-    <div *ngFor="let i of informacion" class="col-lg-4 col-md-6">
-      <div class="p-3 card">
-        <img src="{{ i.img }}" class="imagenTarjetas card-image-top" alt="{{ i.alt }}">
-        <div class="card-body">
-          <h5 class="card-title">{{ i.nombre }}</h5>
-          <p class="card-text">{{ i.informacion }} - {{ i.edadProm }}</p>
-          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#verMasInfo"
-            (click)="verMasInfo(i)">
-            Ver más
-          </button>
+<div class="contenedorTarjetas">
+  <div class="container text-center">
+    <div class="row">
+      <div *ngFor="let i of informacion" class="col-lg-4 col-md-6">
+        <div class="p-3 card">
+          <img src="{{ i.img }}" class="imagenTarjetas card-image-top responsive-image-container" alt="{{ i.alt }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ i.nombre }}</h5>
+            <p class="card-text">{{ i.informacion }} - {{ i.edadProm }}</p>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#verMasInfo"
+              (click)="verMasInfo(i)">
+              Ver más
+            </button>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<!-- Informacion -->
+ <div class="containerGeneral">
+  <div *ngFor="let b of bloqueInfo" class="contenedorSeccion">
+
+  <h1 class="tituloSecciones">{{ b.titulo }}</h1>
+
+  <!-- Bloque uno -->
+  <div class="bloqueUno">
+    <div>
+      <img class="imagenSecciones" [src]="b.img" alt="">
+    </div>
+    <div class="parrafo">
+      <p>{{ b.informacion }}</p>
+    </div>
+  </div>
+</div>
+ </div>
+ 
 
 <!-- Modal -->
 <div class="modal fade" id="verMasInfo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

@@ -57,6 +57,10 @@
     .card {
         width: 18rem;
     }
+     .carousel-item, .active img {
+    max-height: 250px;
+    object-fit: cover;
+  }
 }
 
 .container {

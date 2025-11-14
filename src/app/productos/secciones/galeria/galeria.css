@@ -8,3 +8,20 @@
     color: aliceblue;
 }
 
+@media (min-width: 751px) {
+    .card {
+        width: 18rem;
+    }
+}
+
+/*Pantalla cel*/
+@media (max-width: 750px) {
+    .card {
+        width: 18rem;
+    }
+}
+
+.contenedorTarjetas {
+    display: flex;
+    justify-content: center;
+}

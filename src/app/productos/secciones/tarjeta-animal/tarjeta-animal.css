@@ -4,3 +4,7 @@
   object-fit: cover;     /* recorta sin deformar la imagen */
   border-radius: 8px;    /* opcional: bordes suaves */
 }
+.contenedor {
+    display: flex;
+    justify-content: center;
+}

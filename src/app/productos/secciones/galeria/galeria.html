@@ -1,13 +1,16 @@
 <h1 class="titulo">Galeria</h1>
 
-<div class="container">
+<div class="contenedorTarjetas">
+  <div class="container">
   <div *ngFor="let categoria of categorias" class="mb-5">
     <h2 class="categoriaNombre text-center mb-3">{{ categoria.nombre }}</h2>
     <div class="row g-3">
-      <div class="col-12 col-sm-6 col-md-4" *ngFor="let animal of categoria.animales">
+      <div class="col-lg-4 col-md-6" *ngFor="let animal of categoria.animales">
         <!-- Le pasamos cada objeto a la tarjeta -->
-        <app-tarjeta-animal [animal]="animal"></app-tarjeta-animal>
+        <app-tarjeta-animal [animal]="animal" ></app-tarjeta-animal>
       </div>
     </div>
   </div>
 </div>
+</div>
+

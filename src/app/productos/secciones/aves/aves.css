@@ -34,9 +34,12 @@
 .bloqueUno {
   display: flex;
   justify-content: center;
-  background-color: aliceblue;
+  flex-direction: row;
+  gap: 20px;
+  background-color: #fdf0d5;
   border-radius: 5rem;
   margin: 2rem;
+  border: 0.5rem solid #669bbc;
 }
 
 .imagenSecciones {
@@ -52,20 +55,36 @@
   margin: 2rem;
   font-family: "Cinzel", "Serif";
   font-size: 1.5rem;
+  color: black;
 }
 
-.bloqueDos {
-  display: flex;
-  justify-content: center;
-  background-color: aliceblue;
-  border-radius: 5rem;
-  margin: 2rem;
+@media (min-width: 751px) {
+  .card {
+    width: 18rem;
+  }
 }
 
-.bloqueTres {
+/*Pantalla cel*/
+@media (max-width: 750px) {
+  .bloqueUno {
+    flex-direction: column;
+    align-items: center; /* centra imagen y texto */
+    text-align: center;
+  }
+
+  .imagenSecciones {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  .parrafo p {
+    text-align: center;
+  }
+}
+
+.contenedorTarjetas {
+  margin-left: 3.9rem;
   display: flex;
   justify-content: center;
-  background-color: aliceblue;
-  border-radius: 5rem;
-  margin: 2rem;
 }

@@ -1,13 +1,91 @@
-.titulo {
-    text-align: center;
-    color: aliceblue;
+.titulo,
+.cinzel-fuente {
+  color: aliceblue;
+  text-align: center;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 3rem;
+  display: block;
 }
+
 .card-image-top {
   width: 100%;
-  height: 300px;         /* podés ajustar el alto a gusto */
-  object-fit: cover;     /* recorta sin deformar la imagen */
-  border-radius: 8px;    /* opcional: bordes suaves */
+  height: 300px;
+  /* podés ajustar el alto a gusto */
+  object-fit: cover;
+  /* recorta sin deformar la imagen */
+  border-radius: 8px;
+  /* opcional: bordes suaves */
 }
+
 .card-text {
-    font-size: small;
+  font-size: small;
+}
+
+.tituloSecciones {
+  color: aliceblue;
+  margin: 2rem;
+  text-align: center;
+  font-family: "Cinzel", "Serif";
+}
+
+.bloqueUno {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  background-color: #283618;
+  border-radius: 5rem;
+  margin: 2rem;
+  border: 0.5rem solid #606c38;
+}
+
+.imagenSecciones {
+  margin: 2rem;
+}
+
+.imagenSecciones {
+  height: 15rem;
+  border-radius: 4rem;
+}
+
+.parrafo {
+  margin: 2rem;
+  font-family: "Cinzel", "Serif";
+  font-size: 1.5rem;
+  color: blanchedalmond;
+}
+
+@media (min-width: 751px) {
+  .card {
+    width: 18rem;
+  }
+}
+
+/*Pantalla cel*/
+@media (max-width: 750px) {
+  .bloqueUno {
+    flex-direction: column;
+    align-items: center;
+    /* centra imagen y texto */
+    text-align: center;
+  }
+
+  .imagenSecciones {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  .parrafo p {
+    text-align: center;
+  }
+}
+
+.contenedorTarjetas {
+  margin-left: 3.9rem;
+  display: flex;
+  justify-content: center;
 }

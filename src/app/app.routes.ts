@@ -12,6 +12,7 @@ import { Roedores } from './productos/secciones/roedores/roedores';
 import { Equidos } from './productos/secciones/equidos/equidos';
 import { Galeria } from './productos/secciones/galeria/galeria';
 import { Leporidae } from './productos/secciones/leporidae/leporidae';
+import { Novedades } from './pages/novedades/novedades';
 
 export const routes: Routes = [
     /* defininmos una raiz principal */ 
@@ -20,13 +21,15 @@ export const routes: Routes = [
     {path: 'about', component: About},
     {path: 'contact', component: Contact},
     {path: 'products', component: Products},
-    {path: 'aves', component: Aves},
-    {path: 'caninos', component: Caninos},
-    {path: 'felinos', component: Felinos},
-    {path: 'peces', component: Peces},
+    {path: 'news', component: Novedades},
+    {path: 'birds', component: Aves},
+    {path: 'canines', component: Caninos},
+    {path: 'felines', component: Felinos},
+    {path: 'fish', component: Peces},
     {path: 'reptiles', component: Reptiles},
-    {path: 'roedores', component: Roedores},
-    {path: 'equidos', component: Equidos},
+    {path: 'rodents', component: Roedores},
+    {path: 'equidae', component: Equidos},
     {path: 'leporidae', component: Leporidae},
-    {path: 'galeria', component: Galeria}
+    {path: 'galery', component: Galeria}
+
 ];

@@ -51,6 +51,16 @@
   border-radius: 4rem;
 }
 
+.imagenTarjetas {
+    object-fit: cover;
+    width: 100%;
+}
+
+.card-text {
+    font-size: small;
+}
+
+
 .parrafo {
   margin: 2rem;
   font-family: "Cinzel", "Serif";

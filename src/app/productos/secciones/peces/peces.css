@@ -42,9 +42,19 @@
   border: 0.5rem solid #52b69a;
 }
 
+.imagenTarjetas {
+    object-fit: cover;
+    width: 100%;
+}
+
 .imagenSecciones {
   margin: 2rem;
 }
+
+.card-text {
+    font-size: small;
+}
+
 
 .imagenSecciones {
   height: 15rem;

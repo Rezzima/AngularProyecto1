@@ -42,8 +42,14 @@
   border: 0.5rem solid #a68a64;
 }
 
-.imagenSecciones {
-  margin: 2rem;
+.card-text {
+    font-size: small;
+}
+
+
+.imagenTarjetas {
+    object-fit: cover;
+    width: 100%;
 }
 
 .imagenSecciones {

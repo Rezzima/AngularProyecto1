@@ -58,6 +58,16 @@
   color: blanchedalmond;
 }
 
+.imagenTarjetas {
+    object-fit: cover;
+    width: 100%;
+}
+
+.card-text {
+    font-size: small;
+}
+
+
 @media (min-width: 751px) {
   .card {
     width: 18rem;

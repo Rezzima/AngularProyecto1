@@ -3,6 +3,7 @@ export interface InfoAnimales {
     img: string;
     nombre: string;
     alt: string;
+    descripcionCorta?: string;
     informacion: string;
     edadProm: number;
 }

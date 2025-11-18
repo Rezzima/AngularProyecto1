@@ -31,16 +31,17 @@
   font-family: "Cinzel", "Serif";
 }
 
-.bloqueUno {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  gap: 20px;
-  background-color: #c1121f;
-  border-radius: 5rem;
-  margin: 2rem;
-  border: 0.5rem solid #003049;
+.bloqueUno {                 
+  display: flex;                             /* Convierte el contenedor en un flexbox: sus hijos se organizan en una línea flexible. */
+  justify-content: center;                   /* Centra los elementos hijos a lo largo del eje principal (a lo largo de la fila). */
+  flex-direction: row;                       /* Define el eje principal como horizontal (fila). Es el valor por defecto en flex, pero aquí se declara explícitamente. */
+  gap: 20px;                                 /* Espacio fijo de 20px entre cada hijo directo del flex container. */
+  background-color: #c1121f;                 /* Color de fondo del contenedor (hex): un rojo intenso. */
+  border-radius: 5rem;                       /* Bordes redondeados: 5rem es grande, da una forma tipo "píldora" si el contenedor es lo suficientemente alto/ancho. */
+  margin: 2rem;                              /* Margen externo alrededor del contenedor: separa este elemento de otros (arriba/abajo/izq/der). */
+  border: 0.5rem solid #003049;              /* Borde: 0.5rem de ancho, estilo sólido, color #003049 (azul oscuro). */
 }
+
 
 .imagenSecciones {
   margin: 2rem;

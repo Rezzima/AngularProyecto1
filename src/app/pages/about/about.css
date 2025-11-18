@@ -1,5 +1,5 @@
 .titulo {
-   color: aliceblue;
+    color: aliceblue;
     text-align: center;
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
@@ -9,8 +9,9 @@
     display: block;
     margin: 1rem;
 }
+
 .cinzel-fuente {
-   color: aliceblue;
+    color: aliceblue;
     text-align: center;
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
@@ -20,17 +21,56 @@
     display: block;
     margin: 1rem;
 }
-#jefazo {
-    height: 300px;
-    width: 300px;
-    margin-left: 1rem;
+
+/* Para pantallas grandes (PC, tablets grandes) */
+@media (min-width: 751px) {
+    .card {
+        width: 18rem;
+        /* Fija el ancho de la tarjeta a 18rem cuando la pantalla es mayor a 751px */
+    }
+
+    #jefazo {
+        height: 300px;
+        width: 300px;
+        margin-left: 1rem;
+    }
+
+    #jefeContainer {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
 }
-.containerGeneral {
-    text-align: center;
-}
-#jefeContainer {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+
+/* Para pantallas chicas (celulares) */
+@media (max-width: 750px) {
+    .bloqueUno {
+        display: flex;
+        flex-direction: column;
+        /* Pone los elementos uno debajo del otro en lugar de lado a lado */
+        align-items: center;
+        /* Centra horizontalmente los elementos dentro del contenedor */
+        text-align: center;
+        /* Centra el texto dentro del bloque */
+    }
+
+    .imagenSecciones {
+        width: 100%;
+        /* La imagen ocupa todo el ancho disponible */
+        max-width: 250px;
+        /* Pero nunca supera los 250px */
+        height: auto;
+        /* Mantiene proporción de la imagen */
+    }
+
+     #jefazo {
+        height: 300px;
+        width: 300px;
+    }
+
+    .parrafo p {
+        text-align: center;
+        /* Centra el texto del párrafo */
+    }
 }

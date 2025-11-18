@@ -1,0 +1,57 @@
+.titulo,
+.cinzel-fuente {
+  color: aliceblue;
+  text-align: center;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2rem;
+  display: block;
+}
+
+.carousel-item {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-inner {
+    border-radius: 5rem;
+}
+
+.carrouselContainer {
+    margin: 2rem;
+}
+
+.parrafo {
+  margin: 2rem;
+  font-family: "Cinzel", "Serif";
+  font-size: 1.5rem;
+  color: blanchedalmond;
+}
+
+/* Para pantallas grandes (PC, tablets grandes) */
+@media (min-width: 751px) {
+  .card {
+    width: 18rem;   /* Fija el ancho de la tarjeta a 18rem cuando la pantalla es mayor a 751px */
+  }
+}
+
+/* Para pantallas chicas (celulares) */
+@media (max-width: 750px) {
+  .bloqueUno {
+    flex-direction: column;   /* Pone los elementos uno debajo del otro en lugar de lado a lado */
+    align-items: center;       /* Centra horizontalmente los elementos dentro del contenedor */
+    text-align: center;        /* Centra el texto dentro del bloque */
+  }
+
+  .imagenSecciones {
+    width: 100%;               /* La imagen ocupa todo el ancho disponible */
+    max-width: 250px;          /* Pero nunca supera los 250px */
+    height: auto;              /* Mantiene proporción de la imagen */
+  }
+
+  .parrafo p {
+    text-align: center;        /* Centra el texto del párrafo */
+  }
+}

@@ -20,8 +20,8 @@ export class Contact {
   });
 
   enviarMensaje(): void {
-    if(this.nuevoMensaje.valid){
-      const nuevoMensaje: Mensaje={
+    if (this.nuevoMensaje.valid) {
+      const nuevoMensaje: Mensaje = {
         id: this.contadorId++,
         mensaje: this.nuevoMensaje.value.mensaje!,
         email: this.nuevoMensaje.value.email!,

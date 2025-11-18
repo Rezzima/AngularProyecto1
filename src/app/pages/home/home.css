@@ -45,23 +45,49 @@
     object-fit: cover;
 }
 
-/*Pantalla comp*/
+/* Para pantallas grandes (PC, tablets grandes) */
 @media (min-width: 751px) {
     .card {
         width: 18rem;
+        /* Fija el ancho de la tarjeta a 18rem cuando la pantalla es mayor a 751px */
     }
 }
 
-/*Pantalla cel*/
+/* Para pantallas chicas (celulares) */
 @media (max-width: 750px) {
-    .card {
-        width: 18rem;
+    .bloqueUno {
+        flex-direction: column;
+        /* Pone los elementos uno debajo del otro en lugar de lado a lado */
+        align-items: center;
+        /* Centra horizontalmente los elementos dentro del contenedor */
+        text-align: center;
+        /* Centra el texto dentro del bloque */
     }
-     .carousel-item, .active img {
-    max-height: 250px;
-    object-fit: cover;
-  }
+
+    .imagenSecciones {
+        width: 100%;
+        /* La imagen ocupa todo el ancho disponible */
+        max-width: 250px;
+        /* Pero nunca supera los 250px */
+        height: auto;
+        /* Mantiene proporción de la imagen */
+    }
+
+    .parrafo p {
+        text-align: center;
+        /* Centra el texto del párrafo */
+    }
+
+    .carousel-item {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        /* hace que la imagen llene el espacio sin deformarse */
+        border-radius: 5px;
+        /* opcional, por estética */
+    }
 }
+
 
 .container {
     display: flex;
